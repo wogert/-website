@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Автосервис</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>  
+            <a href="index.html">
+                <img src="images/i.jpg" alt="Автосервис" title="Автосервис">
+            </a>
+        </header>
+        <hr> 
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="services(услуги).html">Услуги</a></li>
+                <li><a href="prices(цены).html">Цены</a></li>
+                <li><a href="contacts(контакты).html">Контакты</a></li>
+            </ul>
+        </nav>
+        <hr>
+        <div class="contact">
+        <h2 id="beginning">Ниже представлена форма записи и вся информация для поиска нас!</h2>
+        <h3>Форма записи:</h3>
+        <form action="handler.php" method="post">
+            <div class="form-group">
+            <label for="name">Ваше имя:</label>
+            <input type="text" placeholder="Введите имя"/>
+            </div>
+            <div class="form-group">
+            <label for="number">Ваш телефон:</label>
+            <input type="text" placeholder="Введите номер телефона" />
+            </div>
+            <p>Выберите вид услуг:</p>
+            <label for="checkbox1">Ремонтные работы</label> 
+            <input type="checkbox" name="checkbox1"/>
+            <label for="checkbox2">Диагностика</label> 
+            <input type="checkbox" name="checkbox2"/>
+            <label for="checkbox3">Техническое обслуживание</label> 
+            <input type="checkbox" name="checkbox3"/>
+            <div class="form-group">
+            <p>Ваши пожелания:</p>
+            <textarea name="textarea" cols="50" rows="5"></textarea><br />
+           </div>
+            <input class="jakor" type="submit" value="Отправить"/>
+        </form>
+        </div>
+        <p>Наш оператор свяжется с вами в ближайшее время</p>
+
+        <h4>Наш номер телефона:</h4>
+        <p>+375 (44) XXX - XX - XX</p>
+
+        <h4>Наши партнеры:</h4>
+        <a href="https://titangomel.by/">TITAN srvice</a><br>
+        <a href="https://stoa.by/">STOA</a><br>
+        <a href="https://plaza.parts/?yclid=2045140250145849343">PLAZA</a><br>
+
+        <div style="position:relative;overflow:hidden;"><a href="https://yandex.by/maps/155/gomel/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Гомель</a><a href="https://yandex.by/maps/155/gomel/?ll=31.003810%2C52.433813&mode=routes&rtext=52.433699%2C31.002790~52.430372%2C31.011874&rtt=auto&ruri=~&utm_medium=mapframe&utm_source=maps&z=18.09" style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс Карты</a><iframe src="https://yandex.by/map-widget/v1/?ll=31.003810%2C52.433813&mode=routes&rtext=52.433699%2C31.002790~52.430372%2C31.011874&rtt=auto&ruri=~&z=18.09" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div> <br>
+        <a href="#beginning" class="jakor">Перейти в начало</a>
+        <hr>
+        <footer>
+            <b>График работы:</b>
+            <p>С 8:00 до 21:00<br>Каждый день</p>
+        </footer>
+    </div>
+</body>
+</html>

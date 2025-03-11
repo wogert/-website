@@ -1,0 +1,239 @@
+/* Основные стили */
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    background: #f1f1f1;
+    color: #0f141e;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Центрирование по горизонтали */
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px; /* Максимальная ширина контейнера */
+    padding: 0 15px; /* Отступы по краям */
+    margin: 20px auto; /* Отступы сверху и снизу */
+}
+
+/* Стилизация изображений на страницах под один лаконичный стиль */
+.auto {
+    width: 100%;
+    max-width: 1000px;
+    border-radius: 28px;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+    margin: 20px 0; /* Отступы сверху и снизу */
+}
+
+/* Стилизация списка меню */
+.menu ul {
+    list-style: none; /* Убираем маркеры списка */
+    margin: 0; /* Убираем отступы */
+    padding-left: 0; /* Убираем отступы */
+    margin-top: 25px; /* Делаем отступ сверху */
+    display: flex;
+    flex-wrap: wrap; /* Обеспечиваем перенос элементов меню */
+    justify-content: center; /* Центрируем элементы меню */
+}
+
+.menu a {
+    text-decoration: none; /* Убираем подчеркивание текста ссылок */
+    background: #30A8E6; /* Добавляем фон к пункту меню */
+    color: #fff; /* Меняем цвет ссылок */
+    padding: 10px; /* Добавляем отступ */
+    font-family: arial; /* Меняем шрифт */
+    border-radius: 4px; /* Добавляем скругление */
+    margin: 5px; /* Добавляем отступ между элементами меню */
+}
+
+.menu a:hover {
+    background: #1C85BB; /* Добавляем эффект при наведении */
+}
+
+.menu li {
+    margin: 5px; /* Добавляем отступ у пунктов меню */
+}
+
+/* Стилизация списка услуг */
+ul.services {
+    list-style-type: none; /* Убираем маркеры списка */
+    padding: 0; /* Убираем отступы */
+    display: flex; /* Располагаем элементы горизонтально */
+    justify-content: center; /* Центрируем элементы */
+    gap: 20px; /* Пробелы между элементами */
+    margin-top: 20px; /* Отступ сверху */
+    margin-bottom: 20px; /* Отступ снизу */
+}
+
+ul.services li {
+    background: #30A8E6; /* Фон для пунктов */
+    border-radius: 8px; /* Скругленные углы */
+    padding: 10px 20px; /* Внутренние отступы */
+}
+
+ul.services li a {
+    color: white; /* Цвет текста */
+    text-decoration: none; /* Убираем подчеркивание */
+    font-size: 1em; /* Размер шрифта */
+    font-weight: bold; /* Жирный текст */
+    display: block; /* Блок для текста */
+    text-align: center; /* Центрируем текст */
+}
+
+ul.services li:hover {
+    background: #1C85BB; /* Цвет фона при наведении */
+}
+
+/* Стилизация параграфов */
+.info p {
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.bord-p {
+    font-weight: bold;
+    font-style: oblique;
+}
+
+/* Оформление якорной ссылки */
+.jakor {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Синий фон */
+    color: white; /* Белый цвет текста */
+    text-decoration: none; /* Убрать подчеркивание */
+    border-radius: 5px; /* Скругленные углы */
+    margin-top: 20px; /* Отступ сверху */
+}
+
+.jakor:hover {
+    background-color: #0058b3; /* Темно-синий фон при наведении */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легкая тень */
+}
+
+/* Оформление для footer */
+footer {
+    background-color: #343a40; /* Темный фон */
+    color: white; /* Белый цвет текста */
+    padding: 40px 20px; /* Внутренний отступ */
+    margin-top: 20px; /* Отступ сверху */
+    text-align: center; /* Центровка текста */
+}
+
+/* Оформление текста внутри footer */
+footer b {
+    display: block; /* Блок для заголовка */
+    font-size: 1.2em; /* Увеличенный размер шрифта */
+    margin-bottom: 10px; /* Отступ снизу */
+}
+
+footer p {
+    margin: 0; /* Убираем отступы вокруг текста */
+    line-height: 1.5; 
+}
+
+/* Адаптивные стили для всего сайта */
+@media (max-width: 768px) {
+    .menu ul {
+        flex-direction: column; /* Вертикальное размещение элементов меню */
+    }
+
+    .jakor {
+        padding: 8px 16px; 
+    }
+}
+
+/* Стилизация таблицы */
+.table {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 14px;
+    border-radius: 10px;
+    border-spacing: 0;
+    text-align: center;
+    margin: 20px 0; /* Отступы сверху и снизу */
+}
+
+.table th {
+    background: #BCEBDD;
+    color: white;
+    text-shadow: 0 1px 1px #2D2020;
+    padding: 10px 20px;
+}
+
+.table th, .table td {
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    border-color: white;
+}
+
+.table th:first-child, .table td:first-child {
+    text-align: left;
+}
+
+.table th:first-child {
+    border-top-left-radius: 10px;
+}
+
+.table th:last-child {
+    border-top-right-radius: 10px;
+    border-right: none;
+}
+
+.table td {
+    padding: 10px 20px;
+    background: #F8E391;
+}
+
+.table tr:last-child td:first-child {
+    border-radius: 0 0 0 10px;
+}
+
+.table tr:last-child td:last-child {
+    border-radius: 0 0 10px 0;
+}
+
+.table tr td:last-child {
+    border-right: none;
+}
+
+.contact h2 {
+    text-align: center;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 14px;
+    color: #86898f;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #ccc;
+    color: #000;
+    padding: 15px 0 10px;
+    outline: none;
+    font-family: inherit;
+  }
+
+  a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: blue;
+  }
+  
+  a:visited {
+    color: rgb(222, 209, 193);
+  }
