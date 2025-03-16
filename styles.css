@@ -25,7 +25,13 @@ body {
     border-radius: 28px;
     box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
     margin: 20px 0; /* Отступы сверху и снизу */
+    transition: transform 0.3s ease; /* Плавный переход */
 }
+
+.auto:hover {
+    transform: scale(1.1); /* Увеличение при наведении */
+}
+
 
 /* Стилизация списка меню */
 .menu ul {
@@ -237,3 +243,10 @@ footer p {
   a:visited {
     color: rgb(222, 209, 193);
   }
+
+  .video-container {
+    display: flex;
+    justify-content: center; /* Центрирование по горизонтали */
+    align-items: center; /* Центрирование по вертикали (если необходимо) */
+  
+}
